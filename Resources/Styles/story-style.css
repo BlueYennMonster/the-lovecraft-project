@@ -1,0 +1,187 @@
+/* Fonts */
+
+/* Montserrat and Raleway */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+/* Reset */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Test Styling */
+
+.bg-green {
+	background-color: rgba(5, 183, 5, 0.5)
+}
+
+.bg-red {
+	background-color: rgba(216, 19, 19, 0.5);
+}
+
+/* Components */
+
+.container {
+	width: 66%;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	background-color: #ededed;
+	padding: 6% 10%;
+	margin: 20px;
+}
+
+.jumbotron-header {
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.story-text {
+	margin: 20px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.story-subtitle {
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.quote-block {
+	margin: 50px 300px;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.quote-attribution {
+	font-weight: 700;
+}
+
+/* General Styling */
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Navigation */
+
+/* Layout */
+
+.nav-area {
+	display:flex;
+	height: 40px;
+	background-color: #ededed;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+	flex-grow: 10;
+	align-items: center;
+}
+
+.logo-area {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #bcbcbc;
+	height: inherit;
+}
+
+
+/* Styling */
+
+#logo {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav-links > div {
+	height: 40px;
+	line-height: 40px;
+}
+
+.nav-links span {
+	font-size: 20px;
+	margin: 20px;
+	line-height: normal;
+	vertical-align: middle;
+}
+
+.nav-links > div:hover {
+	background-color: #ffffff;
+}
+
+
+
+
+/* Mobile */
+
+/* Burger Menu */
+
+.mobile-nav {
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu > div {
+	background-color: #ededed;
+	border: 1px solid #e5e5e5;
+	padding: 5%;
+}
+
+.mobile-menu > div:hover {
+	background-color: #cecece;
+}
+
+/* Navigation */
+
+@media screen and (max-width: 826px) {
+	.nav-area {
+		height: auto;
+	}
+
+	.logo-area {
+		padding: 5%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.nav-links {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: block;
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.jumbotron-header {
+		font-size: 1rem;
+	}
+
+	.story-text {
+		font-size: 1rem;
+	}
+
+	.story-subtitle {
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,165 @@
+/* Fonts */
+
+/* Montserrat and Raleway */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+/* Reset */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Components */
+
+.container {
+	width: 66%;
+	margin: 0 auto;
+}
+
+/* General Styling */
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p > a {
+	color: rgb(178, 26, 26);
+}
+
+p > a:hover {
+	color: rgb(209, 106, 106);
+}
+
+/* Navigation */
+
+/* Layout */
+
+.nav-area {
+	display:flex;
+	height: 40px;
+	background-color: #ededed;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+	flex-grow: 10;
+	align-items: center;
+}
+
+.logo-area {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #bcbcbc;
+	height: inherit;
+}
+
+.story-link {
+	font-size: 1.5rem;
+}
+
+
+/* Styling */
+
+#logo {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav-links > div {
+	height: 40px;
+	line-height: 40px;
+}
+
+.nav-links span {
+	font-size: 20px;
+	margin: 20px;
+	line-height: normal;
+	vertical-align: middle;
+}
+
+.nav-links > div:hover {
+	background-color: #ffffff;
+}
+
+.stories-subtitle {
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.stories-header {
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+#stories-subtitle {
+	font-weight: 400;
+}
+
+
+/* Mobile */
+
+/* Burger Menu */
+
+.mobile-nav {
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu > div {
+	background-color: #ededed;
+	border: 1px solid #e5e5e5;
+	padding: 5%;
+}
+
+.mobile-menu > div:hover {
+	background-color: #cecece;
+}
+
+/* Navigation */
+
+@media screen and (max-width: 826px) {
+	.nav-area {
+		height: auto;
+	}
+
+	.logo-area {
+		padding: 5%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.nav-links {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: block;
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 740px) {
+
+	.story-text {
+		font-size: 1rem;
+	}
+
+	.story-subtitle {
+		font-size: 1.2rem;
+	}
+}
