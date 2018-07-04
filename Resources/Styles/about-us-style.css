@@ -18,7 +18,7 @@ html {
 /* Components */
 
 .container {
-	width: 1660px;
+	width: 66%;
 	margin: 0 auto;
 }
 
@@ -27,6 +27,11 @@ html {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+img {
+	width: 100%;
+	object-fit: scale-down;
 }
 
 /* Navigation */
@@ -139,6 +144,14 @@ a {
 
 /* Navigation */
 
+@media screen and (max-width: 1440px){
+
+	.about-grid {
+		grid-template-columns: 1fr;
+	}
+
+}
+
 @media screen and (max-width: 826px) {
 	.nav-area {
 		height: auto;
@@ -146,6 +159,17 @@ a {
 
 	.logo-area {
 		padding: 5%;
+	}
+}
+
+@media screen and (max-width: 740px) {
+
+	.story-text {
+		font-size: 1rem;
+	}
+
+	.story-subtitle {
+		font-size: 1.2rem;
 	}
 }
 
@@ -160,13 +184,12 @@ a {
 	}
 }
 
-@media screen and (max-width: 740px) {
-
-	.story-text {
+@media screen and (max-width: 426px){
+	p {
 		font-size: 1rem;
 	}
 
-	.story-subtitle {
-		font-size: 1.2rem;
+	.about-image {
+		display: none;
 	}
 }

@@ -17,6 +17,14 @@ html {
 	font-family: 'Raleway', sans-serif;
 }
 
+hr {
+	margin: 2rem 0;
+}
+
+p {
+	margin: 2rem 0;
+}
+
 /* Components */
 
 .container {
@@ -34,8 +42,6 @@ html {
 	font-size: 2rem;
 	font-family: 'Montserrat', sans-serif;
 }
-
-/*block size and height, margins left and right slightly*/
 
 .story-text {
 	font-size: 1.5rem;
@@ -118,9 +124,6 @@ a {
 	background-color: #ffffff;
 }
 
-
-
-
 /* Mobile */
 
 /* Burger Menu */
@@ -155,6 +158,23 @@ a {
 	}
 }
 
+
+@media screen and (max-width: 769px) {
+	.jumbotron-header {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.story-text {
+		font-size: 1rem;
+	}
+
+	.story-subtitle {
+		font-size: 1.2rem;
+	}
+}
+
+
 @media screen and (max-width: 700px) {
 	.nav-links {
 		display: none;
@@ -166,16 +186,9 @@ a {
 	}
 }
 
-@media screen and (max-width: 740px) {
-	.jumbotron-header {
-		font-size: 1rem;
-	}
+@media screen and (max-width: 426px) {
 
-	.story-text {
-		font-size: 1rem;
-	}
-
-	.story-subtitle {
-		font-size: 1.2rem;
+	* {
+		text-align: center;
 	}
 }
