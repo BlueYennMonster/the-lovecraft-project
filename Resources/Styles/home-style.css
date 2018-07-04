@@ -101,7 +101,7 @@ a {
 }
 
 .card-image-2 {
-	background-image: url('https://vignette.wikia.nocookie.net/lovecraft/images/c/cf/Screenshot_20171018-093500.jpg/revision/latest?cb=20171020174137');
+	background-image: url('https://cdn.shopify.com/s/files/1/2095/9241/products/god-of-gifts-cthulhu-ultimate-destruction-wall-art-22822577605_1024x1024.jpg?v=1527378450');
 	background-size: cover;
 	height: 66%;
 	width: 100%;
@@ -143,8 +143,10 @@ a {
 	display: flex;
 	height: 33%;
 	width: 100%;
+	padding: 0 5%;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	font-size: 1.2rem;
 	font-weight: 600;
 	color: black;
@@ -177,12 +179,6 @@ a {
 	margin: 70px 20px;
 	font-size: 1.5rem;
 	line-height: 1.5;
-}
-
-.home-subtitle {
-	font-size: 2rem;
-	font-weight: 600;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .home-header {
@@ -220,7 +216,20 @@ a {
 
 /* Navigation */
 
-@media screen and (max-width: 826px) {
+@media screen and (max-width: 1440px){
+
+	.selection-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card {
+		width: 75%;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+
 	.nav-area {
 		height: auto;
 	}
@@ -228,9 +237,23 @@ a {
 	.logo-area {
 		padding: 5%;
 	}
+
+}
+
+@media screen and (max-width: 900px) {
+
+	.card {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
+
+	.selection-grid {
+		grid-template-columns: 1fr;
+	}
+
 	.nav-links {
 		display: none;
 	}
@@ -239,15 +262,19 @@ a {
 		display: block;
 		margin: 20px;
 	}
+
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 426px) {
 
-	.story-text {
+	.home-header {
 		font-size: 1rem;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
 	}
 
-	.story-subtitle {
-		font-size: 1.2rem;
+	#main-subtitle {
+		font-weight: 400;
 	}
+
 }

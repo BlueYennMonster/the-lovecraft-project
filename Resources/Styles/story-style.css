@@ -8,21 +8,13 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html {
 	font-size: 16px;
 	font-family: 'Raleway', sans-serif;
-}
-
-/* Test Styling */
-
-.bg-green {
-	background-color: rgba(5, 183, 5, 0.5)
-}
-
-.bg-red {
-	background-color: rgba(216, 19, 19, 0.5);
 }
 
 /* Components */
@@ -43,10 +35,12 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/*block size and height, margins left and right slightly*/
+
 .story-text {
-	margin: 20px;
 	font-size: 1.5rem;
 	line-height: 1.5;
+	margin: 20px;
 }
 
 .story-subtitle {

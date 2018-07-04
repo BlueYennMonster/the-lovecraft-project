@@ -9,11 +9,11 @@
 		<!-- Navbar -->
 
 		<header>
-			<div class="nav-area container">
-				<div class="logo-area">
-					<span id="logo">The Lovecraft Project</span>
+			<div class="nav-area flex container">
+				<div class="logo-area flex">
+					<span id="logo"><a href="../index.html">The Lovecraft Project</a></span>
 				</div>
-				<div class="nav-links">
+				<div class="nav-links flex">
 					<div><span><a href="../index.html">Home</a></span></div>
 					<div><span><a href="../About-Us/index.html">About</a></span></div>
 					<div><span><a href="../Stories/index.html">Stories</a></span></div>
@@ -47,19 +47,29 @@
 				<hr>
 			</div>
 
-			<div class="stories-index">
-				<p class="story-link"><a href="../At-The-Mountains-Of-Madness/index.html">At the Mountains of Madness</a></p>
-				<hr>
-				<p class="story-link"><a href="../Call-Of-Cthulhu/index.html">Call of Cthulhu</a></p>
-				<hr>
-				<p class="story-link"><a href="../Pickmans-Model/index.html">Pickman's Model</a></p>
-				<hr>
-				<p class="story-link"><a href="../The-Cats-Of-Ulthar/index.html">The Cats of Ulthar</a></p>
-				<hr>
-				<p class="story-link"><a href="../The-Dunwich-Horror/index.html">The Dunwich Horror</a></p>
-				<hr>
-				<p class="story-link"><a href="../The-Shadow-Over-Innsmouth/index.html">The Shadow Over Innsmouth</a></p>
-				<hr>
+			<div class="stories-grid flex">
+				<div class="stories-index flex-column">
+					<p class="story-link" id="story1">At the Mountains of Madness</p>
+					<hr>
+					<p class="story-link" id="story2">Call of Cthulhu</p>
+					<hr>
+					<p class="story-link" id="story3">Pickman's Model</p>
+					<hr>
+					<p class="story-link" id="story4">The Cats of Ulthar</p>
+					<hr>
+					<p class="story-link" id="story5">The Dunwich Horror</p>
+					<hr>
+					<p class="story-link" id="story6">The Shadow Over Innsmouth</p>
+					<hr>
+				</div>
+				<div class="stories-selected flex-column">
+					<p class="stories-subtitle">Preview</p>
+					<img id="selected-image" src="https://www.themarysue.com/wp-content/uploads/2014/07/at-the-mountains-of-madness.jpg">
+					<p id="selected-text">I am forced into speech because men of science have refused to follow my advice without knowing why. It is altogether against my will that I tell my reasons for opposing this contemplated invasion of the antarctic—with its vast fossil-hunt and its wholesale boring and melting of the ancient ice-cap—and I am the more reluctant because my warning may be in vain. Doubt of the real facts, as I must reveal them, is inevitable; yet if I suppressed what will seem extravagant and incredible there would be nothing left. The hitherto withheld photographs, both ordinary and aërial, will count in my favour; for they are damnably vivid and graphic. Still, they will be doubted because of the great lengths to which clever fakery can be carried. The ink drawings, of course, will be jeered at as obvious impostures; notwithstanding a strangeness of technique which art experts ought to remark and puzzle over.</p>
+					<form id="preview-button-form" action="../At-The-Mountains-Of-Madness/index.html">
+						<button id="preview-button">Read More</button>
+					</form>
+				</div>
 			</div>
 
 
@@ -67,7 +77,7 @@
 		</div>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        <script type="text/javascript" src="../Resources/Scripts/script.js"></script>
+        <script type="text/javascript" src="../Resources/Scripts/stories-script.js"></script>
 
 	</body>
 </html>
